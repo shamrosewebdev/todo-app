@@ -1,0 +1,81 @@
+body{
+    background-color: #fef6fa;
+
+}
+.app-container{
+    width:50vw;
+    min-height: 80vh;
+    border-radius: 10px;
+    background-color: #fedfef;
+}
+
+.button{
+    padding:5px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+
+.button:hover{
+    padding:5px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #b32b6f;
+
+}
+
+.text-1{
+    color: #d63384;
+}
+
+.text {
+    word-wrap: break-word; /* Ensures words will wrap inside the container */
+    word-break: break-word; /* Prevents overflow of long words */
+  }
+
+.bg-pink{
+  background-color: #d63384;
+  color: white;
+}
+
+.input-area{
+    border: 1px solid  #d63384;
+    outline: none;
+    border-radius: 5px;
+    height: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+    .app-container {
+      width: 90vw; /* Take 90% of the viewport width on smaller screens */
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .app-container {
+      width: 100vw; 
+      border-radius: 0px;
+    }
+    body{
+        background-color: #fedfef;
+    }
+  
+    .input-area {
+      height: 40px; /* Increase height slightly for better touch interaction */
+    }
+  
+    .button {
+      padding: 10px; /* Increase padding for easier clicking on mobile */
+    }
+
+    .button:hover{
+        padding: 10px;
+    }
+  
+    .text-1 {
+      font-size: 1.5rem; /* Adjust font size for better readability */
+    }
+  }
